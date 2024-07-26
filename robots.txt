@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://nagacharan-tangirala.github.io/al-folio/sitemap.xml
+Sitemap: https://nagacharan-tangirala.github.io/sitemap.xml
