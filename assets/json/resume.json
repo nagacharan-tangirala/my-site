@@ -1,18 +1,17 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Nagacharan Teja Tangirala",
+    "label": "PhD Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "nagacharan.tangirala@tum.de", 
+    "phone": "+49 176 4807 1620",
+    "summary": "PhD Student in VANET and Urban Mobility simulations",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Badgasteiner Str. 7",
+      "postalCode": "81373",
+      "city": "Munich",
+      "countryCode": "Germany",
+      "region": "Bavaria"
     },
     "profiles": [
       {
@@ -24,13 +23,13 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
+      "name": "Technical Univesity of Munich",
+      "position": "Research Associate",
       "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "startDate": "2021-05-16",
+      "endDate": "2024-05-15",
+      "summary": "Collaborated with DHL and Siemens on delivery truck electrification project. Analyzed ",
+      "highlights": ["Mobility Simulations, Fleet Management"]
     }
   ],
   "volunteer": [
