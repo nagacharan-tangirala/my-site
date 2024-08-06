@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://nagacharan-tangirala.github.io/sitemap.xml
+Sitemap: https://nagacharan.phd/sitemap.xml
