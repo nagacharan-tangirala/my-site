@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Use Git in Overleaf
-date: 2025-09-28 09:00:00
+date: 2024-09-28 09:00:00
 description: Git integration with Overleaf
 tags: overleaf git
 categories: howto
