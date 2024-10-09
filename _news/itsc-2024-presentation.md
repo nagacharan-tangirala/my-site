@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Presented at ITSC 2024
-date: 2024-07-09 18:05:00
+date: 2024-09-25 18:05:00
 inline: false
 related_posts: false
 ---
