@@ -31,8 +31,8 @@ One of the options will be Git Integration.
 Click on the `Generate token` button as shown below:
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/overleaf-git-28-09-2024/git_token.png" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-0 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/posts/overleaf-git-28-09-2024/git_token.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -44,22 +44,22 @@ If you already have a key generated, but do not know where is it, then you can d
 
 ### Git Synchronization
 
-Go to the *Menu* on the top-left:
+Go to the **Menu** on the top-left:
 
-<div class="row mt-3">
+<div class="row mt-2">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/overleaf-git-28-09-2024/overleaf_menu.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/posts/overleaf-git-28-09-2024/overleaf_menu.png" alignment="right" max-width="40%" text-align="center" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     This is the menu that appears on the left-side of Overleaf.
 </div>
 
-Click on the *Git* button to open the following window:
+Click on the **Git** button to open the following window:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/overleaf-git-28-09-2024/git_link.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/posts/overleaf-git-28-09-2024/git_link.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -85,6 +85,5 @@ Upon successful authentication, the command will clone the repository to the fol
 
 The git integration combines all the changes into one big change.
 Granular history is not maintained.
-This can be avoided by setting up a cron job that regularly updates the overleaf data.
-This will avoid the document running into outdation.
+This can be avoided by setting up a cron job that regularly pushes the local changes to overleaf.
 
