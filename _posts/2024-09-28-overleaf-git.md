@@ -3,7 +3,7 @@ layout: post
 title: How to Use Git in Overleaf
 date: 2024-09-28 09:00:00
 description: Git integration with Overleaf
-tags: overleaf git
+tags: howto
 categories: howto
 thumbnail: assets/img/9.jpg
 ---
@@ -14,7 +14,7 @@ thumbnail: assets/img/9.jpg
 It allows for easier collaboration and online management of the documents.
 As a PhD student, this is one of the integral software because I handle all of my writing with the help of Overleaf.
 Document history is integral for me because of the I have collaboration with my mentor.
-However, Overlaef has moved the ability to longer document histories behind the subscription tier.
+However, Overleaf has moved the ability to longer document histories behind the subscription tier.
 Hence, an alternative way of handling this is discussed in this post.
 An added benefit is the ability to work on the local machine without needing access to internet.
 
@@ -85,5 +85,5 @@ Upon successful authentication, the command will clone the repository to the fol
 
 The git integration combines all the changes into one big change.
 Granular history is not maintained.
-This can be avoided by setting up a cron job that regularly pushes the local changes to overleaf.
+This can be avoided by setting up a Cron job that regularly pushes the local changes to overleaf.
 
