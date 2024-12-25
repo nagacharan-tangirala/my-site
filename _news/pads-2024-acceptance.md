@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Regular Article accepted for presentation at PADS 2024
+title: Regular Article accepted at PADS 2024
 date: 2024-03-30 10:00:00
 inline: false 
 related_posts: false
