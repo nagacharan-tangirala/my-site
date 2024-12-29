@@ -1,0 +1,140 @@
+{
+  "basics": {
+    "name": "Nagacharan Teja Tangirala",
+    "label": "PhD Student",
+    "image": "",
+    "email": "nagacharan.tangirala@tum.de", 
+    "phone": "+49 176 4807 1620",
+    "summary": "PhD Student in VANET and Urban Mobility simulations",
+    "location": {
+      "address": "Badgasteiner Str. 7",
+      "postalCode": "81373",
+      "city": "Munich",
+      "countryCode": "Germany",
+      "region": "Bavaria"
+    }
+  },
+  "work": [
+    {
+      "name": "Technical Univesity of Munich, Munich, Germany",
+      "position": "Research Associate",
+      "url": "https://www.ce.cit.tum.de/air/home",
+      "startDate": "2021-05-16",
+      "endDate": "2024-05-15",
+      "summary": "I worked on a DHL, Siemens and TUM Collaboration on Delivery Truck Electrification project. We modeled the delivery trucks in CityMoS, an urban mobility simulator. We studied the feasibility of deliveries and Depot power management strategies when Diesel engine trucks are replaced with Electric trucks.",
+      "highlights": ["Mobility Simulations, Fleet Management"]
+    },
+    {
+      "name": "TUMCREATE, Singapore",
+      "position": "Research Engineer",
+      "url": "https://citymos.net",
+      "startDate": "2019-12-03",
+      "endDate": "2021-05-12",
+      "summary": "I joined TUMCREATE to work on the development of CityMoS. In a project with Singaporean government, we studied the electrification of the entire mobility system of Singapore. In a team of 4, my job was to model taxi behavior in CityMoS.",
+      "highlights": ["Mobility Simulations, Taxi Modelling"]
+    },
+    {
+      "name": "Nanyang Technological University (NTU), Singapore",
+      "position": "Research Engineer",
+      "url": "https://www.ntu.edu.sg",
+      "startDate": "2017-07-03",
+      "endDate": "2019-11-30",
+      "summary": "I had two projects at NTU. We worked on Connected Vehicles simulation platform that enables studies of Truck Platooning and GLOSA. In the second project, we modelled and simulated the interactions between e-scooters and pedestrians.",
+      "highlights": ["Mobility Simulations"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University of Munich (TUM)",
+      "location": "Munich, Germany",
+      "url": "https://www.ce.cit.tum.de/air/home",
+      "area": "TUM School of Computation, Information and Technology",
+      "studyType": "PhD",
+      "startDate": "2021-05-16",
+      "endDate": "Ongoing",
+      "score": "10",
+      "courses": ["Topic: AI in Urban Mobility for 5G and Beyond"]
+    },
+    {
+      "institution": "National University of Singapore (NUS)",
+      "location": "Singapore, Singapore",
+      "url": "https://www.nus.edu.sg",
+      "area": "Electrical and Computer Engineering",
+      "studyType": "Master of Science (MSc)",
+      "startDate": "2015-07-21",
+      "endDate": "2016-06-30",
+      "score": "10",
+      "courses": ["Specialization: Automation and Control" ,"Thesis: Simulation study of Mobile Robot Navigation considering Human's emotion"]
+    },
+    {
+      "institution": "SDM College of Engineering and Technology",
+      "location": "Dharwad, India",
+      "url": "https://sdmcet.ac.in",
+      "area": "Electrical and Electronics Engineering",
+      "studyType": "Bachelor of Engineering (B.E)",
+      "startDate": "2009-08-31",
+      "endDate": "2013-06-15",
+      "score": "10",
+      "courses": ["Thesis: Simulation study of Flexible AC Transmission System Controllers"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Vincent Bendix Award for Automotive Engineering",
+      "date": "2021",
+      "awarder": "SAE International",
+      "url": "https://www.sae.org/participate/awards/vincent-bendix-automotive-electronics-engineering-award",
+      "summary": "This award is given to the best paper on Automotive Engineering for that year. Our team won this award for our work at NTU on Connected Vehicles simulations."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["C++", "Rust", "Python", "Java"]
+    },
+    {
+      "name": "Simulators",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["ns-3", "CityMoS", "OMNeT++", "VISSIM", "MATLAB"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "German",
+      "fluency": "A2",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Urban Mobility",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Autonomous Mobility on Demand", "Electric Vehicles"]
+    },
+    {
+      "name": "Federated Learning",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Client Selection", "Model Aggregation", "Communication effects on Training"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Professor Christoph Sommer",
+      "icon": "fa-solid fa-laptop",
+      "reference": "Professor at TU Dresden, mentors my PhD dissertation"
+    },
+    {
+      "name": "Dr. David Eckhoff",
+      "icon": "fa-solid fa-thumbtack",
+      "reference": "Supervisor at TUMCREATE, leading the CityMoS project"
+    }
+  ]
+}

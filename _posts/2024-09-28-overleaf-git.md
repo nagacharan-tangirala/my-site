@@ -13,7 +13,7 @@ thumbnail: assets/img/9.jpg
 [Overleaf](https://www.overleaf.com) is an online latex environment.
 It allows for easier collaboration and online management of the documents.
 As a PhD student, this is one of the integral software because I handle all of my writing with the help of Overleaf.
-Document history is integral for me because of the I have collaboration with my mentor.
+Document history is integral for me because of the collaboration I have with my mentor.
 However, Overleaf has moved the ability to longer document histories behind the subscription tier.
 Hence, an alternative way of handling this is discussed in this post.
 An added benefit is the ability to work on the local machine without needing access to internet.
