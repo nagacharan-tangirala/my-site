@@ -2,7 +2,7 @@
 layout: post
 title: Regular Article accepted at WCNC 2025
 date: 2024-12-20 08:00:00
-inline: false 
+inline: false
 related_posts: false
 ---
 

@@ -3,7 +3,7 @@
     "name": "Nagacharan Teja Tangirala",
     "label": "PhD Student",
     "image": "",
-    "email": "nagacharan.tangirala@tum.de", 
+    "email": "nagacharan.tangirala@tum.de",
     "phone": "+49 176 4807 1620",
     "summary": "PhD Student in VANET and Urban Mobility simulations",
     "location": {
@@ -64,7 +64,10 @@
       "startDate": "2015-07-21",
       "endDate": "2016-06-30",
       "score": "10",
-      "courses": ["Specialization: Automation and Control" ,"Thesis: Simulation study of Mobile Robot Navigation considering Human's emotion"]
+      "courses": [
+        "Specialization: Automation and Control",
+        "Thesis: Simulation study of Mobile Robot Navigation considering Human's emotion"
+      ]
     },
     {
       "institution": "SDM College of Engineering and Technology",
@@ -75,7 +78,9 @@
       "startDate": "2009-08-31",
       "endDate": "2013-06-15",
       "score": "10",
-      "courses": ["Thesis: Simulation study of Flexible AC Transmission System Controllers"]
+      "courses": [
+        "Thesis: Simulation study of Flexible AC Transmission System Controllers"
+      ]
     }
   ],
   "awards": [
@@ -122,7 +127,11 @@
     {
       "name": "Federated Learning",
       "icon": "fa-solid fa-tag",
-      "keywords": ["Client Selection", "Model Aggregation", "Communication effects on Training"]
+      "keywords": [
+        "Client Selection",
+        "Model Aggregation",
+        "Communication effects on Training"
+      ]
     }
   ],
   "references": [

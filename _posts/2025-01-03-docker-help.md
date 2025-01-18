@@ -8,6 +8,3 @@ This is the command for starting a container of a given image in interactive mod
 ```
 docker run -it --entrypoint=/bin/bash myimagename
 ```
-
-
-

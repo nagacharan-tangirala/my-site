@@ -68,7 +68,7 @@ Click on the **Git** button to open the following window:
 
 ### Local Copy
 
-Copy the command as is to clone the project to your local machine. 
+Copy the command as is to clone the project to your local machine.
 It is suggested to give a custom name at the end of the command to prevent directories with awkward names.
 For example:
 
@@ -86,4 +86,3 @@ Upon successful authentication, the command will clone the repository to the fol
 The git integration combines all the changes into one big change.
 Granular history is not maintained.
 This can be avoided by setting up a Cron job that regularly pushes the local changes to overleaf.
-
