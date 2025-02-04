@@ -1,144 +1,1141 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-01-18T07:49:02+00:00</updated><id>http://0.0.0.0:8080/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">Docker Help</title><link href="http://0.0.0.0:8080/blog/2025/docker-help/" rel="alternate" type="text/html" title="Docker Help" /><published>2025-01-03T00:00:00+00:00</published><updated>2025-01-03T00:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/docker-help</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/docker-help/"><![CDATA[<h2 id="docker">Docker</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-02-04T16:35:43+00:00</updated><id>http://0.0.0.0:8080/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Builder design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-builder-pattern/" rel="alternate" type="text/html" title="Builder design pattern" /><published>2025-02-04T15:45:00+00:00</published><updated>2025-02-04T15:45:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-builder-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-builder-pattern/"><![CDATA[<p>The creation of the object can sometimes get complex.
+Each component may have multiple possible sub-class variants.
+The builder pattern makes it easy to construct such objects.</p>
 
-<p>It is a virtualization software that lets you containerized applications.
-Here are some of the useful commands in Docker.</p>
+<p>Suppose you have complex simulation of vehicular networks that contains various components.
+Each component also has several models that they would like to configure.</p>
 
-<p>This is the command for starting a container of a given image in interactive mode.</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Simulation</span> <span class="o">{</span>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -it --entrypoint=/bin/bash myimagename
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Docker]]></summary></entry><entry><title type="html">How to Use Git in Overleaf</title><link href="http://0.0.0.0:8080/blog/2024/overleaf-git/" rel="alternate" type="text/html" title="How to Use Git in Overleaf" /><published>2024-09-28T09:00:00+00:00</published><updated>2024-09-28T09:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2024/overleaf-git</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2024/overleaf-git/"><![CDATA[<h2 id="introduction">Introduction</h2>
-
-<p><a href="https://www.overleaf.com">Overleaf</a> is an online latex environment.
-It allows for easier collaboration and online management of the documents.
-As a PhD student, this is one of the integral software because I handle all of my writing with the help of Overleaf.
-Document history is integral for me because of the collaboration I have with my mentor.
-However, Overleaf has moved the ability to longer document histories behind the subscription tier.
-Hence, an alternative way of handling this is discussed in this post.
-An added benefit is the ability to work on the local machine without needing access to internet.</p>
-
-<h2 id="git-integration">Git Integration</h2>
-
-<p>By storing the document history in git, there is no limit to the document history.
-This is easy to setup.
-First, you need to generate git token.</p>
-
-<h3 id="git-token">Git token</h3>
-
-<p>Click on the Account Settings and you will notice a project synchronization section.
-One of the options will be Git Integration.
-Click on the <code class="language-plaintext highlighter-rouge">Generate token</code> button as shown below:</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-0 mt-md-0">
-        
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/posts/overleaf-git-28-09-2024/git_token-480.webp 480w,/assets/img/posts/overleaf-git-28-09-2024/git_token-800.webp 800w,/assets/img/posts/overleaf-git-28-09-2024/git_token-1400.webp 1400w," sizes="95vw" type="image/webp" />
-    
-    <img src="/assets/img/posts/overleaf-git-28-09-2024/git_token.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    This is the account settings menu.
-</div>
-
-<p>Save the generated key in a secure location, as you won’t be seeing this key in the future.
-If you already have a key generated, but do not know where is it, then you can delete it and recreate a new key.</p>
-
-<h3 id="git-synchronization">Git Synchronization</h3>
-
-<p>Go to the <strong>Menu</strong> on the top-left:</p>
-
-<div class="row mt-2">
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/posts/overleaf-git-28-09-2024/overleaf_menu-480.webp 480w,/assets/img/posts/overleaf-git-28-09-2024/overleaf_menu-800.webp 800w,/assets/img/posts/overleaf-git-28-09-2024/overleaf_menu-1400.webp 1400w," sizes="95vw" type="image/webp" />
-    
-    <img src="/assets/img/posts/overleaf-git-28-09-2024/overleaf_menu.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" style="
-          
-          
-          
-            max-width: 40%;
-          
-          
-        " loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    This is the menu that appears on the left-side of Overleaf.
-</div>
-
-<p>Click on the <strong>Git</strong> button to open the following window:</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/posts/overleaf-git-28-09-2024/git_link-480.webp 480w,/assets/img/posts/overleaf-git-28-09-2024/git_link-800.webp 800w,/assets/img/posts/overleaf-git-28-09-2024/git_link-1400.webp 1400w," sizes="95vw" type="image/webp" />
-    
-    <img src="/assets/img/posts/overleaf-git-28-09-2024/git_link.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    This is the git link and contains a randomly generated string as the repo name.
-</div>
-
-<h3 id="local-copy">Local Copy</h3>
-
-<p>Copy the command as is to clone the project to your local machine.
-It is suggested to give a custom name at the end of the command to prevent directories with awkward names.
-For example:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://git@git.overleaf.com/66f2717alsdjfaliwoeru &lt;custom_name&gt;
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Vehicle</span><span class="o">&gt;</span> <span class="n">vehicles</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="no">RSU</span><span class="o">&gt;</span> <span class="n">rsu</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Server</span><span class="o">&gt;</span> <span class="n">servers</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">BaseStation</span><span class="o">&gt;</span> <span class="n">baseStations</span><span class="o">;</span>
+    <span class="o">...</span>
+<span class="o">}</span>
 </code></pre></div></div>
 
-<p>It will prompt for the username and password.
-Give the same email as your overleaf account.
-For password, enter the token created in the previous step.
-Upon successful authentication, the command will clone the repository to the folder with name <code class="language-plaintext highlighter-rouge">custom_name</code>.</p>
+<p>Depending on the scenario, the possible components vary.
+Further, the number of components also vary from scenario to scenario.
+Builder pattern will let you build such object.
+A common simulation builder interface can be defined as:</p>
 
-<h3 id="bonus-tip">Bonus tip</h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">SimBuilder</span> <span class="o">{</span>
 
-<p>The git integration combines all the changes into one big change.
-Granular history is not maintained.
-This can be avoided by setting up a Cron job that regularly pushes the local changes to overleaf.</p>]]></content><author><name></name></author><category term="howto" /><category term="howto" /><summary type="html"><![CDATA[Git integration with Overleaf]]></summary></entry></feed>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Vehicle</span><span class="o">&gt;</span> <span class="nf">buildVehicles</span><span class="o">();</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="no">RSU</span><span class="o">&gt;</span> <span class="nf">buildRSU</span><span class="o">();</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Server</span><span class="o">&gt;</span> <span class="nf">buildServers</span><span class="o">();</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">BaseStations</span><span class="o">&gt;</span> <span class="nf">buildBaseStations</span><span class="o">();</span>
+    <span class="nc">Simulation</span> <span class="nf">build</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>A concrete implementation for the interface can be given as follows:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">SimulationBuilder</span> <span class="kd">implements</span> <span class="nc">SimBuilder</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="nd">@Override</span>
+    <span class="nc">SimBuilder</span> <span class="nf">buildVehicles</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Vehicle</span><span class="o">&gt;</span> <span class="n">vehicles</span><span class="o">;</span>
+        <span class="c1">// Logic to build the vehicles list. (This also includes logic to variety of vehicles)</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">simulation</span><span class="o">.</span><span class="na">setVehicles</span><span class="o">(</span><span class="n">vehicles</span><span class="o">);</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">SimBuilder</span> <span class="nf">buildRSU</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">List</span><span class="o">&lt;</span><span class="no">RSU</span><span class="o">&gt;</span> <span class="n">rsus</span><span class="o">;</span>
+        <span class="c1">// Logic to build the RSU list.</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">simulation</span><span class="o">.</span><span class="na">setRSU</span><span class="o">(</span><span class="n">rsus</span><span class="o">);</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">SimBuilder</span> <span class="nf">buildServers</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Server</span><span class="o">&gt;</span> <span class="n">servers</span><span class="o">;</span>
+        <span class="c1">// Logic to build the Server list.</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">simulation</span><span class="o">.</span><span class="na">setServers</span><span class="o">(</span><span class="n">servers</span><span class="o">);</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">SimBuilder</span> <span class="nf">buildBaseStations</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">BaseStation</span><span class="o">&gt;</span> <span class="n">baseStations</span><span class="o">;</span>
+        <span class="c1">// Logic to build base stations list.</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">simulation</span><span class="o">.</span><span class="na">setBaseStations</span><span class="o">(</span><span class="n">baseStations</span><span class="o">);</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">Simulation</span> <span class="nf">build</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">simulation</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Using this builder, we can configure different simulation scenarios.
+For example, a <code class="language-plaintext highlighter-rouge">V2RScenario</code> will only have <code class="language-plaintext highlighter-rouge">Vehicle</code> and <code class="language-plaintext highlighter-rouge">RSU</code> components in the simulation.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">class</span> <span class="nc">Runner</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kt">void</span> <span class="nf">runSimulation</span><span class="o">(</span><span class="nc">String</span> <span class="n">scenario</span><span class="o">)</span> <span class="o">{</span>
+        <span class="o">...</span>
+        <span class="nc">Simulation</span> <span class="n">simulation</span><span class="o">;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">scenario</span> <span class="o">==</span> <span class="s">"V2R"</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">simulation</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">createV2RScenario</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">simulation</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">createAllScenario</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="o">...</span>
+        <span class="c1">// code to run the simulation.</span>
+        <span class="o">...</span>
+    <span class="o">}</span>
+
+    <span class="nc">Simulation</span> <span class="nf">createV2RScenario</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">SimBuilder</span> <span class="n">builder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimulationBuilder</span><span class="o">();</span>
+        <span class="n">builder</span><span class="o">.</span><span class="na">buildVehicles</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">buildRSU</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+    <span class="o">}</span>
+
+
+    <span class="nc">Simulation</span> <span class="nf">createAllScenario</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">SimBuilder</span> <span class="n">builder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimulationBuilder</span><span class="o">();</span>
+        <span class="n">builder</span><span class="o">.</span><span class="na">buildVehicles</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">buildRSU</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">buildServers</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">buildBaseStations</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Similarly, other combinations are also possible. 
+Not just the possible components, the variants of each component can also be configured from different builder requirements.
+For instance, <code class="language-plaintext highlighter-rouge">Vehicle</code> list can be populated with different types of <code class="language-plaintext highlighter-rouge">Vehicle</code> derived classes.</p>
+
+<p>Each method in the builder can be supplemented with additional conditions and input files to assist more complex object creation.
+The creation of each component such as <code class="language-plaintext highlighter-rouge">Vehicle</code> or <code class="language-plaintext highlighter-rouge">BaseStation</code> can be further complex, which can be built using <strong>Factory</strong> or <strong>Builder</strong> patterns.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="creational" /><summary type="html"><![CDATA[Builder design pattern with an example in Java]]></summary></entry><entry><title type="html">Flyweight design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-flyweight-pattern/" rel="alternate" type="text/html" title="Flyweight design pattern" /><published>2025-02-04T14:45:00+00:00</published><updated>2025-02-04T14:45:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-flyweight-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-flyweight-pattern/"><![CDATA[<p>Objects can be expensive to create and manipulate, especially in large numbers.
+Simulations often contain several 100s or even 1000s of objects.
+If there are some properties that are common among all the objects, then they can be extracted out.
+This pattern is called Flyweight pattern.</p>
+
+<p>Imagine a vehicle simulator where there are 1000s of cars.
+However, there are only two models of the car supported.
+The only difference between the two models is the current position.
+Rest of the stuff is common among all the 1000s of instances of cars.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">Image</span> <span class="n">image</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">Color</span> <span class="n">color</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">setPosition</span><span class="o">(</span><span class="kt">double</span> <span class="n">newX</span><span class="o">,</span> <span class="kt">double</span> <span class="n">newY</span><span class="o">);</span> <span class="c1">// Only thing that is changing between instances.</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">SmallCar</span> <span class="kd">extends</span> <span class="nc">Car</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">x</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">y</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="no">SPEED</span> <span class="o">=</span> <span class="mf">100.0</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">carFeatures</span> <span class="n">carFeatures</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kd">public</span> <span class="nf">SmallCar</span><span class="o">(</span><span class="nc">String</span> <span class="n">style</span><span class="o">,</span> <span class="nc">Color</span> <span class="n">color</span><span class="o">,</span> <span class="nc">CarFactory</span> <span class="n">carFactory</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">carFeatures</span> <span class="o">=</span> <span class="n">carFactory</span><span class="o">.</span><span class="na">getCarFeatures</span><span class="o">(</span><span class="n">style</span><span class="o">,</span> <span class="n">color</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">setPosition</span><span class="o">(</span><span class="kt">double</span> <span class="n">newX</span><span class="o">,</span> <span class="kt">double</span> <span class="n">newY</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">x</span> <span class="o">=</span> <span class="n">newX</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">y</span> <span class="o">=</span> <span class="n">newY</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">BigCar</span> <span class="kd">extends</span> <span class="nc">Car</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">x</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">y</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="no">SPEED</span> <span class="o">=</span> <span class="mf">130.0</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kd">public</span> <span class="nf">BigCar</span><span class="o">(</span><span class="nc">String</span> <span class="n">style</span><span class="o">,</span> <span class="nc">Color</span> <span class="n">color</span><span class="o">,</span> <span class="nc">CarFactory</span> <span class="n">carFactory</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">carFeatures</span> <span class="o">=</span> <span class="n">carFactory</span><span class="o">.</span><span class="na">getCarWith</span><span class="o">(</span><span class="n">style</span><span class="o">,</span> <span class="n">color</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">setPosition</span><span class="o">(</span><span class="kt">double</span> <span class="n">newX</span><span class="o">,</span> <span class="kt">double</span> <span class="n">newY</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">x</span> <span class="o">=</span> <span class="n">newX</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">y</span> <span class="o">=</span> <span class="n">newY</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">CarFactory</code> is defined as:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">CarFactory</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">CarFeatures</span><span class="o">&gt;</span> <span class="n">cache</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nc">Car</span> <span class="nf">getCarWith</span><span class="o">(</span><span class="nc">Style</span> <span class="n">style</span><span class="o">,</span> <span class="nc">Color</span> <span class="n">color</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">cache</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="n">style</span><span class="o">))</span> <span class="o">{</span>
+            <span class="n">returns</span> <span class="k">this</span><span class="o">.</span><span class="na">cache</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">style</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="nc">CarFeatures</span> <span class="n">carFeatures</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">CarFeatures</span><span class="o">(</span><span class="n">style</span><span class="o">,</span> <span class="n">color</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">cache</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">style</span><span class="o">,</span> <span class="n">carFeatures</span><span class="o">);</span>
+        <span class="k">return</span> <span class="n">carFeatures</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Suppose we create 1000 <code class="language-plaintext highlighter-rouge">SmallCar</code> and <code class="language-plaintext highlighter-rouge">BigCar</code>, then there are 2000 objects that store image and color.
+This is redundant and that’s why we use <code class="language-plaintext highlighter-rouge">CarFeatures</code> object.
+<code class="language-plaintext highlighter-rouge">CarFeatures</code> stores the constant information that is the <code class="language-plaintext highlighter-rouge">Style</code> and <code class="language-plaintext highlighter-rouge">Color</code>.
+The <code class="language-plaintext highlighter-rouge">CarFactory</code> has a cache of the objects created with a specific <code class="language-plaintext highlighter-rouge">Style</code>.
+Whenever a new <code class="language-plaintext highlighter-rouge">Car</code> is created, the <code class="language-plaintext highlighter-rouge">CarFactory</code> first checks if the requested style is already created for a prior creation of <code class="language-plaintext highlighter-rouge">Car</code>.
+If so, then it returns a cached value.
+Otherwise, it creates a new <code class="language-plaintext highlighter-rouge">CarFeatures</code>, caches it and returns a reference to the user.</p>
+
+<p>The advantage of this is that the styles can be limited but the number of instances are more.
+Each <code class="language-plaintext highlighter-rouge">Car</code> instance, instead of being associated with its own <code class="language-plaintext highlighter-rouge">CarFeatures</code>, it gets a reference from the cache.
+May be there 10 to 15 styles, but 1000s of cars.
+The memory gains are significant with such implementation.
+Here, <code class="language-plaintext highlighter-rouge">CarFeatures</code> is the flyweight.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="structural" /><summary type="html"><![CDATA[Flyweight design pattern with an example in Java]]></summary></entry><entry><title type="html">Abstract Factory design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-abstract-factory-pattern/" rel="alternate" type="text/html" title="Abstract Factory design pattern" /><published>2025-02-04T13:55:00+00:00</published><updated>2025-02-04T13:55:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-abstract-factory-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-abstract-factory-pattern/"><![CDATA[<p>Sometimes, we are trying to build a product that requires components of various types.
+However, the mix and match of the components is not desired.
+In such cases, the creation of the components can be bug prone.
+This can be solved by abstract factory pattern.</p>
+
+<p>Suppose there are two types of sports gear.
+Athletes prefer sports gear of their preferred band but do not allow mix and match.</p>
+
+<p>A sample sports gear, shorts, could be:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">Shorts</span> <span class="o">{</span>
+    <span class="kt">double</span> <span class="nf">getPrice</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">PumaShorts</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">price</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">double</span> <span class="nf">getPrice</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">price</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">NikeShorts</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">price</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">double</span> <span class="nf">getPrice</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">price</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Similarly, <code class="language-plaintext highlighter-rouge">Racket</code> can be defined:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">Racket</span> <span class="o">{</span>
+    <span class="kt">double</span> <span class="nf">getPrice</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">PumaRacket</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">size</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">double</span> <span class="nf">getSize</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">size</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">NikeRacket</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">size</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">double</span> <span class="nf">getSize</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">size</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The athletes want to buy their preferred brand, and they do not want to end up with <code class="language-plaintext highlighter-rouge">NikeShorts</code> and <code class="language-plaintext highlighter-rouge">PumaRackets</code> or vice versa.
+Abstract Factory pattern can help in such cases.
+Initially, we define an abstract factory that defines the structure for creation of these objects.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">SportsFactory</span> <span class="o">{</span>
+
+    <span class="nc">Shorts</span> <span class="nf">createShorts</span><span class="o">();</span>
+
+    <span class="nc">Racket</span> <span class="nf">createRacket</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>This interface can be implemented by the concrete factories.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">PumaFactory</span> <span class="kd">implements</span> <span class="nc">SportsFactory</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">Shorts</span> <span class="nf">createShorts</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">PumaShorts</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">Racket</span> <span class="nf">createRacket</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">PumaRacket</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">NikeFactory</span> <span class="kd">implements</span> <span class="nc">SportsFactory</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">Shorts</span> <span class="nf">createShorts</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">NikeShorts</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">Racket</span> <span class="nf">createRacket</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">NikeRacket</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The sports store can exploit these abstracted factories to create concrete factories based on the user requests.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">SportsStore</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">SportsFactory</span> <span class="n">sportsFactory</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kt">void</span> <span class="nf">makeSale</span><span class="o">(</span><span class="nc">String</span> <span class="n">preferredMake</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">preferredMake</span> <span class="o">==</span> <span class="s">"Nike"</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">sportsFactory</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">NikeFactory</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">sportsFactory</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PumaFactory</span><span class="o">();</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Here the same brand shorts and racket is guaranteed to be created.</span>
+        <span class="nc">Shorts</span> <span class="n">shorts</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">sportsFactory</span><span class="o">.</span><span class="na">createShorts</span><span class="o">();</span>
+        <span class="nc">Racket</span> <span class="n">racket</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">sportsFactory</span><span class="o">.</span><span class="na">createRacket</span><span class="o">();</span>
+
+        <span class="c1">// Code to make the sale.</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>This will prevent mix and match as expected and the sports store does not perform additional checks to actually call appropriate brand’s new methods.
+This may look trivial in this case, but if the object creation is complex and needs a builder of its own, then abstract factory pattern will be highly beneficial to mask that implementation away from the application.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="creational" /><summary type="html"><![CDATA[Abstract Factory design pattern with an example in Java]]></summary></entry><entry><title type="html">Factory method design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-factory-method-pattern/" rel="alternate" type="text/html" title="Factory method design pattern" /><published>2025-02-04T12:55:00+00:00</published><updated>2025-02-04T12:55:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-factory-method-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-factory-method-pattern/"><![CDATA[<p>Low coupling is preferred.
+The implementation should depend on the super classes and interfaces, but not on the concrete implementations.
+Hence, the creation of the objects should be decoupled from the object usage places.
+Factory method pattern can assist in achieving it.</p>
+
+<p>Suppose we are building a rental app that allows vehicle rentals.
+It creates a type of the vehicle on the fly and allows it to be rented.</p>
+
+<p>The interface for the <code class="language-plaintext highlighter-rouge">Vehicle</code> can be:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">Vehicle</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="nf">getName</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Bike</span> <span class="kd">implements</span> <span class="nc">Vehicle</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">boolean</span> <span class="n">isRented</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Car</span> <span class="kd">implements</span> <span class="nc">Vehicle</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">boolean</span> <span class="n">isRented</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="nc">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The creation of the <code class="language-plaintext highlighter-rouge">Vehicle</code> objects is handled in the <code class="language-plaintext highlighter-rouge">VehicleFactory</code> class:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">VehicleFactory</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="nc">Vehicle</span> <span class="nf">createVehicle</span><span class="o">(</span><span class="nc">String</span> <span class="n">vType</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">vType</span> <span class="o">==</span> <span class="s">"car"</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="k">new</span> <span class="nf">Car</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="k">new</span> <span class="nf">Bike</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The rental app wants to rent these vehicles whenever a new request arrives.
+Depending on the concrete request of the user app, appropriate <code class="language-plaintext highlighter-rouge">Vehicle</code> will be created.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Rental</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">VehicleFactory</span> <span class="n">vehicleFactory</span><span class="o">;</span>
+    <span class="kt">boolean</span> <span class="nf">rent</span><span class="o">(</span><span class="nc">String</span> <span class="n">vehicleType</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Vehicle</span> <span class="n">vehicle</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">vehicleFactory</span><span class="o">.</span><span class="na">createVehicle</span><span class="o">(</span><span class="n">vehicleType</span><span class="o">);</span>
+        <span class="n">vehicle</span><span class="o">.</span><span class="na">rent</span><span class="o">();</span> <span class="c1">// Any logic required to rent.</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Here, <code class="language-plaintext highlighter-rouge">Rental</code> application is free from bothering about the actual concrete types of <code class="language-plaintext highlighter-rouge">Vehicle</code>.
+Instead, it can write the logic assuming that the object is of <code class="language-plaintext highlighter-rouge">Vehicle</code> interface type.
+Any new extensions are easier, it just needs adding new concrete implementation of <code class="language-plaintext highlighter-rouge">Vehicle</code> and extending the <code class="language-plaintext highlighter-rouge">VehicleFactory</code> to support its creation.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="creational" /><summary type="html"><![CDATA[Factory method design pattern with an example in Java]]></summary></entry><entry><title type="html">Mediator design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-mediator-pattern/" rel="alternate" type="text/html" title="Mediator design pattern" /><published>2025-02-04T12:35:00+00:00</published><updated>2025-02-04T12:35:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-mediator-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-mediator-pattern/"><![CDATA[<p>Classes with fewer responsibilities are preferred.
+However, too much modularization may result in increasing interactions between the objects.
+This is not preferred because it increases the chances for bugs.</p>
+
+<p>The coupling between the classes should be low.
+Mediator pattern helps in achieving it.
+It is like an air traffic controller that ensures safe interactions for airplanes.
+It is not always recommended to add this pattern, because sometimes the high coupling can be a sign of bad design requiring a total redesign.</p>
+
+<p>Steps to apply mediator pattern are:</p>
+
+<ul>
+  <li>Identify the set of tightly coupled classes that can benefit from mediator pattern.</li>
+  <li>Declare the mediator interface with the common method that represents an interaction.</li>
+  <li>Implement the interface with a concrete mediator.</li>
+  <li>Rework the interactions through the mediator.</li>
+  <li>Make sure not to create a controller class with every component in the mediator or God object.</li>
+</ul>
+
+<p>A simple example is a chat application, where users of different types want to interact.
+A tutor and student interaction, for example.
+The direct coupling is not good and a mediator pattern can be helpful to add interactions.</p>
+
+<p>A mediator interface can be:</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">Messenger</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">send</span><span class="o">(</span><span class="nc">Person</span> <span class="n">sender</span><span class="o">,</span> <span class="nc">String</span> <span class="n">message</span><span class="o">);</span>
+    <span class="kt">void</span> <span class="nf">sendTo</span><span class="o">(</span><span class="nc">Person</span> <span class="n">sender</span><span class="o">,</span> <span class="nc">String</span> <span class="n">receiverName</span><span class="o">,</span> <span class="nc">String</span> <span class="n">message</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">Student</code> and <code class="language-plaintext highlighter-rouge">Tutor</code> are concrete implementations of the <code class="language-plaintext highlighter-rouge">Person</code> class.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">Messenger</span> <span class="n">messenger</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kt">void</span> <span class="nf">receive</span><span class="o">(</span><span class="nc">String</span> <span class="n">message</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">sendMessage</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">String</span> <span class="n">newMessage</span> <span class="o">=</span> <span class="s">"Hello everyone!"</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">messenger</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">newMessage</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">sendMessageTo</span><span class="o">(</span><span class="nc">String</span> <span class="n">targetName</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">String</span> <span class="n">newMessage</span> <span class="o">=</span> <span class="s">"Hello friend!"</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">messenger</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">targetName</span><span class="o">,</span> <span class="n">newMessage</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="nc">Person</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">year</span><span class="o">;</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Tutor</span> <span class="kd">extends</span> <span class="nc">Person</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">chair</span><span class="o">;</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>A concrete implementation of the <code class="language-plaintext highlighter-rouge">Messenger</code> mediator interface can be:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">ChatApp</span> <span class="kd">implements</span> <span class="nc">Messenger</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Person</span><span class="o">&gt;</span> <span class="n">allPersons</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kt">void</span> <span class="nf">addPerson</span><span class="o">(</span><span class="nc">Person</span> <span class="n">newPerson</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">allPersons</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">newPerson</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">sendMessageTo</span><span class="o">(</span><span class="nc">Person</span> <span class="n">sender</span><span class="o">,</span> <span class="nc">String</span> <span class="n">receiverName</span><span class="o">,</span> <span class="nc">String</span> <span class="n">message</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="nc">Person</span> <span class="nl">person:</span> <span class="k">this</span><span class="o">.</span><span class="na">allPersons</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">==</span> <span class="n">receiverName</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">person</span><span class="o">.</span><span class="na">receive</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">send</span><span class="o">(</span><span class="nc">Person</span> <span class="n">sender</span><span class="o">,</span> <span class="nc">String</span> <span class="n">message</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="nc">Person</span> <span class="nl">person:</span> <span class="k">this</span><span class="o">.</span><span class="na">allPersons</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">!=</span> <span class="n">sender</span><span class="o">.</span><span class="na">getName</span><span class="o">())</span> <span class="o">{</span>
+                <span class="n">person</span><span class="o">.</span><span class="na">receive</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>This mediator is passed to all the <code class="language-plaintext highlighter-rouge">Person</code> objects at the time of creation.
+Similarly, the mediator is also aware of all the <code class="language-plaintext highlighter-rouge">Person</code> objects that are created (needs to be done in the application).
+This facilitates the interactions between seemingly complex objects of <code class="language-plaintext highlighter-rouge">Person</code>.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="behavior" /><summary type="html"><![CDATA[Mediator design pattern with an example in Java]]></summary></entry><entry><title type="html">Command design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-command-pattern/" rel="alternate" type="text/html" title="Command design pattern" /><published>2025-02-04T11:45:00+00:00</published><updated>2025-02-04T11:45:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-command-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-command-pattern/"><![CDATA[<p>Command pattern is used to make elements such as UI understandable.
+For instance, a GUI will have so many menus and settings.
+Having a custom behavior for the settings is also common.
+However, having a different interface to each command makes the command invocation difficult.</p>
+
+<p>There are five main components to handle:</p>
+
+<ul>
+  <li><strong>Command</strong> interface: A common interface that is used to represent any command.</li>
+  <li><strong>Concrete Commands</strong>: These are the concrete implementations of the interface.</li>
+  <li><strong>Receiver</strong>: The entity on which the actions must be performed.</li>
+  <li><strong>Invoker</strong>: The boundary object that interacts with the <em>Client</em> and performs commands on the <em>Receiver</em>.</li>
+  <li><strong>Client</strong>: The thing or class that uses the receiver.</li>
+</ul>
+
+<p>A light switch is a good example.
+Bulb is the <em>Receiver</em>, user interacting with the light is the <em>Client</em>.
+The commands are turning the light on or off.
+We use the switch as an <em>Invoker</em>.
+A simple interface for the switch commands can be:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">SwitchCommand</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">execute</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Bulb is the <strong>Receiver</strong> that must be controlled with these commands.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Bulb</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">State</span> <span class="n">state</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kt">void</span> <span class="nf">turnOn</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">state</span> <span class="o">=</span> <span class="no">ON</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">turnOff</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">state</span> <span class="o">=</span> <span class="no">OFF</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>For various switch commands, the concrete implementations can be provided:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">LightOn</span> <span class="kd">implements</span> <span class="nc">SwitchCommand</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">Bulb</span> <span class="n">bulb</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">execute</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">bulb</span><span class="o">.</span><span class="na">turnOn</span><span class="o">();</span> <span class="c1">// Actual work on the receiver is done in the concrete command implementations.</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Turned the light on!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">LightOff</span> <span class="kd">implements</span> <span class="nc">SwitchCommand</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">Bulb</span> <span class="n">bulb</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">execute</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">bulb</span><span class="o">.</span><span class="na">turnOff</span><span class="o">();</span> <span class="c1">// Actual work on the receiver is done in the concrete command implementations.</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Turned the light off!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The switch is the <strong>Invoker</strong>, that receives the commands and executes them.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">LightSwitch</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kt">void</span> <span class="nf">controlLight</span><span class="o">(</span><span class="nc">SwitchCommand</span> <span class="n">switchCommand</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">switchCommand</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Any entity can be using this as a part of the system.
+Lets assume that a smart home controller has this, and this becomes our <strong>Client</strong>.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">HomeController</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">Bulb</span> <span class="n">bulb</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">LightSwitch</span> <span class="n">lightSwitch</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kt">void</span> <span class="nf">turnLightOn</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">SwitchCommand</span> <span class="n">onCommand</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LightOn</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">bulb</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">lightSwitch</span><span class="o">.</span><span class="na">controlLight</span><span class="o">(</span><span class="n">onCommand</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">turnLightOff</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">SwitchCommand</span> <span class="n">offCommand</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LightOff</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">bulb</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">lightSwitch</span><span class="o">.</span><span class="na">controlLight</span><span class="o">(</span><span class="n">offCommand</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Further commands can be added, which is merely extending the <code class="language-plaintext highlighter-rouge">SwitchCommand</code> interface with concrete implementations.
+The <strong>Invoker</strong> needs little to no changes to support the new commands.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="behavior" /><summary type="html"><![CDATA[Command design pattern with an example in Java]]></summary></entry><entry><title type="html">Template Method design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-template-method-pattern/" rel="alternate" type="text/html" title="Template Method design pattern" /><published>2025-02-04T11:25:00+00:00</published><updated>2025-02-04T11:25:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-template-method-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-template-method-pattern/"><![CDATA[<p>Sometimes, there are two different classes that show very similar behavior with different interfaces.
+Template method pattern can be used to remodel and make these indifferent interfaces stick to a common interface.
+This prevents expensive refactoring costs that require changing both the classes.</p>
+
+<p>Refactoring has a checklist.</p>
+<ul>
+  <li>Identify the common and different steps that the indifferent interfaces are doing.</li>
+  <li>Create a new super abstract class with all the common methods defined in it.</li>
+  <li>Move all the common methods to this class from the individual classes.</li>
+  <li>Define abstract placeholder methods for the methods that are different in both the interfaces.</li>
+  <li>Invoke these methods from the template.</li>
+  <li>Convert the indifferent classes as sub-classes derived from the abstract class and override the abstract methods.</li>
+</ul>
+
+<p>A very simple example would be file writers that can output to different formats.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">CsvWriter</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">File</span> <span class="n">file</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">CsvData</span> <span class="n">csvData</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">openCsv</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">open</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">writeDataToCsv</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">openCsv</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">formatData</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">writeToCsv</span><span class="o">(</span><span class="n">csvData</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">closeCsvFile</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">writeToCsv</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">csvData</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">formatData</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Code to format the given data into CsvData.</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">csvData</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">closeCsvFile</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The following is a parquet writer that reads schema before writing data.
+You can see that the both the classes have some functionality that is overlapping.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">ParquetWriter</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">File</span> <span class="n">file</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">Schema</span> <span class="n">schema</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">openParquet</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">open</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">readSchema</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Code to read schema from the user input file.</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">writeDataToParquet</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">openParquet</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">readSchema</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">writeToParquet</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">closeFile</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">writeToParquet</span><span class="o">()</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">writeWithSchema</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="k">this</span><span class="o">.</span><span class="na">schema</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">closeParquetFile</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The two file writer objects do very similar tasks but have wildly different interfaces.
+In case, if we want to check whether a file is being overwritten, then the check has to be added to both the classes.
+This will create a possibility for bugs.
+We tackle this problem using template pattern.</p>
+
+<p>The common steps are opening and closing.
+<code class="language-plaintext highlighter-rouge">ParquetWriter</code> has a single indifferent function that does schema reading before writing.
+<code class="language-plaintext highlighter-rouge">CsvWriter</code> does the formatting step before writing.
+The template method is the data writing step, which will call all the steps in the predefined order.</p>
+
+<p>Now that we identified the common and indifferent methods, we create a new abstract super class.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Writer</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">File</span> <span class="n">file</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="c1">// Common functionality is generalized and moved to this abstract class.</span>
+    <span class="kt">void</span> <span class="nf">openFile</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">open</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">closeFile</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="c1">// This is the template method pattern. It calls the same functionality for both kinds of writers.</span>
+    <span class="c1">// It is the responsibility of the overriding classes to actually implement a corect behavior.</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">writeOutput</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">openFile</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">formatData</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">readSchema</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">writeData</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">closeFile</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">formatData</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">);</span>
+
+    <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">readSchema</span><span class="o">();</span>
+
+    <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">writeData</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">);</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>With the abstract class ready, we override it and write the actual implementations.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">CsvWriter</span> <span class="kd">extends</span> <span class="nc">Writer</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">CsvData</span> <span class="n">csvData</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">formatData</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Logic to format the data into CSV format.</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">csvData</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">readSchema</span><span class="o">()</span> <span class="o">{}</span> <span class="c1">// No schema in CSV, so we have an empty implementation.</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">writeData</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="nc">CsvData</span><span class="o">);</span> <span class="c1">// We ignore the input data, because there is formatted data already.</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Similarly, we write parquet writer as well.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">ParquetWriter</span> <span class="kd">extends</span> <span class="nc">Writer</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">Schema</span> <span class="n">schema</span><span class="o">;</span>
+    <span class="o">...</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">formatData</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span> <span class="o">}</span> <span class="c1">// We don't need formatting here, so we keep this empty.</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">readSchema</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Code to read Schema data and update the schema member.</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">writeData</span><span class="o">(</span><span class="nc">Data</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">file</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="k">this</span><span class="o">.</span><span class="na">schema</span><span class="o">);</span> <span class="c1">// We write using the schema and data.</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>This completes the template pattern refactoring.
+The template method is the <code class="language-plaintext highlighter-rouge">writeOutput</code> method in the abstract super class <code class="language-plaintext highlighter-rouge">Writer</code>.
+The extended classes do not bother about the method call sequence.
+Instead, they focus on their respective ways of doing the appropriate file writing.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="behavior" /><summary type="html"><![CDATA[Template Method design pattern with an example in Java]]></summary></entry><entry><title type="html">State design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-state-pattern/" rel="alternate" type="text/html" title="State design pattern" /><published>2025-02-04T09:35:00+00:00</published><updated>2025-02-04T09:35:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-state-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-state-pattern/"><![CDATA[<p>The state design pattern is used to model the state machines.
+The transitions between states are usually handled in a big <code class="language-plaintext highlighter-rouge">switch</code> statement.
+This results in complex <code class="language-plaintext highlighter-rouge">switch</code> statement and can lead to testing difficulties.
+State pattern helps in addressing the problem using object-oriented approach.</p>
+
+<p>Each state is modeled as a separate state.
+For example, consider a file object.
+File can be either opened, closed or deleted.
+Instead of modeling the states as <code class="language-plaintext highlighter-rouge">enum</code>, each state is modeled as a concrete object.
+An abstract class is used to define the common interface for all the states.
+The controller that is utilizing the object just calls the common interface.</p>
+
+<p>The creation of new states can be in either controller or within the states itself.
+A typical <code class="language-plaintext highlighter-rouge">File</code> class is:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">File</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">FileState</span> <span class="n">fileState</span><span class="o">;</span>
+    <span class="o">...</span>
+    <span class="kt">void</span> <span class="nf">openFile</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">switch</span> <span class="o">(</span><span class="n">fileState</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">case</span> <span class="nl">OPEN:</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Already opened!"</span><span class="o">);</span>
+            <span class="k">case</span> <span class="nl">CLOSED:</span> <span class="k">this</span><span class="o">.</span><span class="na">fileState</span> <span class="o">=</span> <span class="no">OPEN</span><span class="o">;</span>
+            <span class="k">case</span> <span class="nl">DELETED:</span> <span class="k">throw</span> <span class="k">new</span> <span class="nc">FileAlreadyDeletedException</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>In this implementation, the logic is quite simple. 
+In real-world examples, these can be quite extensive with many guard rails for each state.
+Hence, we remodel this using state pattern.</p>
+
+<p>A <code class="language-plaintext highlighter-rouge">FileState</code> abstract class can be:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">FileState</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">open</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">);</span>
+    <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">close</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">);</span>
+    <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">delete</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">);</span>
+    <span class="o">...</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+<p>The <code class="language-plaintext highlighter-rouge">File</code> class will delegate all the calls to this object.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">File</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">FileState</span> <span class="n">fileState</span><span class="o">;</span>
+    <span class="o">...</span>
+    <span class="kt">void</span> <span class="nf">openFile</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">fileState</span><span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">closeFile</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">fileState</span><span class="o">.</span><span class="na">close</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">deleteFile</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">fileState</span><span class="o">.</span><span class="na">delete</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="c1">// A helper message to update the fileState object.</span>
+    <span class="kt">void</span> <span class="nf">updateState</span><span class="o">(</span><span class="nc">FileState</span> <span class="n">newState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">fileState</span> <span class="o">=</span> <span class="n">newState</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Now what remains to do is the concrete implementations for each state.
+<code class="language-plaintext highlighter-rouge">OpenState</code> can have something like this.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">OpenState</span> <span class="kd">extends</span> <span class="nc">FileState</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">open</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Already opened!"</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">close</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">file</span><span class="o">.</span><span class="na">updateState</span><span class="o">(</span><span class="k">new</span> <span class="nc">CloseState</span><span class="o">());</span> <span class="c1">// We are updating the file with the new state.</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">delete</span><span class="o">(</span><span class="nc">File</span> <span class="n">file</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Cannot delete when the file is open!"</span><span class="o">);</span> <span class="c1">// Invalid state transitions are prohibited.</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Similar implementations can be done for <code class="language-plaintext highlighter-rouge">CloseState</code> and <code class="language-plaintext highlighter-rouge">DeleteState</code> as well.
+In <code class="language-plaintext highlighter-rouge">CloseState</code>, we can allow file deletion and opening.
+In <code class="language-plaintext highlighter-rouge">DeleteState</code>, we can throw errors for both opening and closing.</p>
+
+<p>Additionally, we can add guardrails to state transitions.
+For instance, <code class="language-plaintext highlighter-rouge">OpenState</code> can have a check for permissions before trying to open the file.
+<code class="language-plaintext highlighter-rouge">File</code> should pass these necessary constraints to the state objects, which can then use these guard rails and do additional conditional transitions.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="behavior" /><summary type="html"><![CDATA[State design pattern with an example in Java]]></summary></entry><entry><title type="html">Strategy design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-strategy-pattern/" rel="alternate" type="text/html" title="Strategy design pattern" /><published>2025-02-03T09:35:00+00:00</published><updated>2025-02-03T09:35:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-strategy-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-strategy-pattern/"><![CDATA[<p>Strategy pattern helps selecting from multiple implementations based on a certain policy.
+A simple example is the contextual based search selected that selects from the multiple available search algorithms.
+If the data is sorted, then binary search can be used.
+Otherwise, a linear search is unavoidable.</p>
+
+<p>Consider a simple tool that needs the search feature, which is represented by an interface:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">SearchStrategy</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="nf">searchKey</span><span class="o">([</span><span class="no">T</span><span class="o">]</span> <span class="n">data</span><span class="o">,</span> <span class="no">T</span> <span class="n">key</span><span class="o">);</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<p>There can be multiple search strategies:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">BinarySearch</span> <span class="kd">implements</span> <span class="nc">SearchStrategy</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="nd">@Override</span>
+    <span class="kt">int</span> <span class="nf">searchKey</span><span class="o">([</span><span class="no">T</span><span class="o">]</span> <span class="n">data</span><span class="o">,</span> <span class="no">T</span> <span class="n">key</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Implement binary search to find the position of the key.</span>
+        <span class="k">return</span> <span class="n">position</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">LinearSearch</span> <span class="kd">implements</span> <span class="nc">SearchStrategy</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="nd">@Override</span>
+    <span class="kt">int</span> <span class="nf">searchKey</span><span class="o">([</span><span class="no">T</span><span class="o">]</span> <span class="n">data</span><span class="o">,</span> <span class="no">T</span> <span class="n">key</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Implement linear search to find the position of the key.</span>
+        <span class="k">return</span> <span class="n">position</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Now consider a simple <code class="language-plaintext highlighter-rouge">Service</code> that needs this search feature.
+<code class="language-plaintext highlighter-rouge">Service</code> does not bother about which search strategy is being used, it just calls the search function.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Service</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">SearchStrategy</span> <span class="n">searchStrategy</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">boolean</span> <span class="n">isDataSorted</span><span class="o">;</span>
+    <span class="o">...</span>
+    <span class="kt">void</span> <span class="nf">searchForKey</span><span class="o">([</span><span class="no">T</span><span class="o">]</span> <span class="n">data</span><span class="o">,</span> <span class="no">T</span> <span class="n">key</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">servicePolicy</span><span class="o">(</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">searchStrategy</span><span class="o">.</span><span class="na">searchKey</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="n">key</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Handling the switch between different search strategies is dependent on <code class="language-plaintext highlighter-rouge">Context</code>. 
+The <code class="language-plaintext highlighter-rouge">Context</code> is not explicitly handled in the <code class="language-plaintext highlighter-rouge">Service</code>.
+Instead, <code class="language-plaintext highlighter-rouge">Policy</code> is used to monitor the <code class="language-plaintext highlighter-rouge">Context</code> and accordingly initialize the <code class="language-plaintext highlighter-rouge">SearchStrategy</code>.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">ServicePolicy</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">Service</span> <span class="n">service</span><span class="o">;</span>
+    <span class="o">...</span>
+    <span class="nc">ServicePolicy</span><span class="o">(</span><span class="nc">Service</span> <span class="n">service</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">service</span> <span class="o">=</span> <span class="n">service</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">configure</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">service</span><span class="o">.</span><span class="na">isDataSorted</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">service</span><span class="o">.</span><span class="na">setStrategy</span><span class="o">(</span><span class="k">new</span> <span class="nc">BinarySearch</span><span class="o">());</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">service</span><span class="o">.</span><span class="na">setStrategy</span><span class="o">(</span><span class="k">new</span> <span class="nc">LinearSearch</span><span class="o">());</span>
+        <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Each time a new <code class="language-plaintext highlighter-rouge">Service</code> is created, a corresponding <code class="language-plaintext highlighter-rouge">ServicePolicy</code> can be created. 
+Depending on the state of the <code class="language-plaintext highlighter-rouge">Service</code>, an appropriate <code class="language-plaintext highlighter-rouge">SearchStrategy</code> instance is set to the <code class="language-plaintext highlighter-rouge">Service</code>.
+The <code class="language-plaintext highlighter-rouge">Service</code> can then just call the <code class="language-plaintext highlighter-rouge">searchKey()</code> method and it will call the appropriate concrete implementation.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="behavior" /><summary type="html"><![CDATA[Strategy design pattern with an example in Java]]></summary></entry><entry><title type="html">Observer design pattern</title><link href="http://0.0.0.0:8080/blog/2025/java-observer-pattern/" rel="alternate" type="text/html" title="Observer design pattern" /><published>2025-02-03T08:45:00+00:00</published><updated>2025-02-03T08:45:00+00:00</updated><id>http://0.0.0.0:8080/blog/2025/java-observer-pattern</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2025/java-observer-pattern/"><![CDATA[<p>Observer pattern is used to separate the state of the object from its observers.
+There can be one object but many obesrvers.
+To maintain consistency, the observer pattern lets every observer update their information at a time.
+This is also called <strong>Publish and Subscribe</strong>.</p>
+
+<p>There are 3 variants:</p>
+
+<ul>
+  <li>
+    <p>Notification and Pull: Notify the observers that the state is changed. 
+The observers can decide whether to pull the latest state or not.</p>
+  </li>
+  <li>
+    <p>Notification and Push: Along with the notification, the latest state is also sent to the observer.</p>
+  </li>
+  <li>
+    <p>Periodic Pull: The observer will do a periodic pull of the latest state.</p>
+  </li>
+</ul>
+
+<p>A simple example can be the state of a simulation that is logged and plotted:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">VehicleSim</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">speed</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">GraphTool</span> <span class="n">graphTool</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">LogTool</span> <span class="n">logTool</span><span class="o">;</span>
+    <span class="o">...</span>
+    <span class="kt">void</span> <span class="nf">updateState</span><span class="o">(</span><span class="kt">double</span> <span class="n">newSpeed</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">speed</span> <span class="o">=</span> <span class="n">newSpeed</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">graphTool</span><span class="o">.</span><span class="na">updateSpeed</span><span class="o">(</span><span class="n">newSpeed</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">logTool</span><span class="o">.</span><span class="na">updateSpeed</span><span class="o">(</span><span class="n">newSpeed</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">GraphTool</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">updateSpeed</span><span class="o">(</span><span class="kt">double</span> <span class="n">newSpeed</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Code to update the graph with the new speed.</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">LogTool</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kt">void</span> <span class="nf">updateSpeed</span><span class="o">(</span><span class="kt">double</span> <span class="n">newSpeed</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Code to update the log file with the new speed data.</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>At each speed update, the respective graph and log tools are called.
+In an extensive simulation class, such classes can be much more and the calls will also increase.
+To address this issue, we use observer pattern to model the visualization stuff.</p>
+
+<p>A simple observer pattern consists of an <code class="language-plaintext highlighter-rouge">Observer</code> interface and <code class="language-plaintext highlighter-rouge">Subject</code> of interest whose state is being monitored.
+The <code class="language-plaintext highlighter-rouge">Subject</code> can hold many instances of <code class="language-plaintext highlighter-rouge">Observer</code>.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">Observer</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">onUpdate</span><span class="o">(</span><span class="no">T</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">abstract</span> <span class="nc">SimulationSubject</span> <span class="o">{</span> <span class="c1">// Subject in this example.</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Observer</span><span class="o">&gt;</span> <span class="n">observers</span><span class="o">;</span>
+    <span class="o">...</span>
+    <span class="kt">void</span> <span class="nf">addObserver</span><span class="o">(</span><span class="nc">Observer</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">observer</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">observers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">observer</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">removeObserver</span><span class="o">(</span><span class="nc">Observer</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">observer</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">observers</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">observer</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kt">void</span> <span class="nf">notifyObservers</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="nc">Observer</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="nl">observer:</span> <span class="k">this</span><span class="o">.</span><span class="na">observers</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">observer</span><span class="o">.</span><span class="na">onUpdate</span><span class="o">(</span><span class="no">T</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+<p>The graph and log tools are modified to implement the <code class="language-plaintext highlighter-rouge">Observer</code> interface.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">GraphTool</span> <span class="kd">implements</span> <span class="nc">Observer</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">onUpdate</span><span class="o">(</span><span class="kt">double</span> <span class="n">newSpeed</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Code to update the graph with the new speed.</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">LogTool</span> <span class="kd">implements</span> <span class="nc">Observer</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">onUpdate</span><span class="o">(</span><span class="kt">double</span> <span class="n">newSpeed</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Code to update the log file with the new speed data.</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">VehicleSim</code> will now become our <strong>Subject</strong> by extending the <code class="language-plaintext highlighter-rouge">SimulationObject</code> class.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">class</span> <span class="nc">VehicleSim</span> <span class="kd">extends</span> <span class="nc">SimulationObject</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">speed</span><span class="o">;</span>
+    <span class="o">...</span>
+    <span class="kt">void</span> <span class="nf">updateState</span><span class="o">(</span><span class="kt">double</span> <span class="n">newSpeed</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">speed</span> <span class="o">=</span> <span class="n">newSpeed</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">observers</span><span class="o">.</span><span class="na">notifyObservers</span><span class="o">(</span><span class="n">speed</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Whenever the <code class="language-plaintext highlighter-rouge">updateState()</code> method is called in the <code class="language-plaintext highlighter-rouge">VehicleSim</code>, all the observers are notified of the speed update.
+They can use the latest information to perform their respective tasks.
+By having this observer as an abstract class, we reduce cluttering even in the <code class="language-plaintext highlighter-rouge">VehicleSim</code> class.
+Moreover, this also reduces instances of tools getting outdated data.</p>]]></content><author><name></name></author><category term="code" /><category term="java-snippets" /><category term="course" /><category term="patterns" /><category term="behavior" /><summary type="html"><![CDATA[Observer design pattern with an example in Java]]></summary></entry></feed>
