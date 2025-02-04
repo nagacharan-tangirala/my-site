@@ -167,6 +167,24 @@
                 
                 <li class="nav-item ">
                   
+                  <a class="nav-link" href="/blog/">blog
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  
                   <a class="nav-link" href="/cv/">cv
                     
                   </a>
@@ -198,57 +216,6 @@
               
             
           
-            
-              
-                
-                <li class="nav-item ">
-                  
-                  <a class="nav-link" href="/blog/">blog
-                    
-                  </a>
-                </li>
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-                
-                <li class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus
-                    
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    
-                      
-                        <a class="dropdown-item " href="/publications/">publications</a>
-                      
-                    
-                      
-                        <div class="dropdown-divider"></div>
-                      
-                    
-                      
-                        <a class="dropdown-item " href="/projects/">projects</a>
-                      
-                    
-                      
-                        <div class="dropdown-divider"></div>
-                      
-                    
-                      
-                        <a class="dropdown-item " href="/blog/">blog</a>
-                      
-                    
-                  </div>
-                </li>
-              
             
           
           
@@ -353,7 +320,7 @@
       <div class="news">
   
     
-    <div class="table-responsive" style="max-height: 60vw">
+    <div class="table-responsive">
       <table class="table table-sm table-borderless">
         
         
@@ -403,24 +370,6 @@
             </td>
           </tr>
         
-          <tr>
-            <th scope="row" style="width: 20%">Apr 22, 2024</th>
-            <td>
-              
-                <a class="news-title" href="/news/2024-vnc-acceptance/">Poster accepted at VNC 2024</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row" style="width: 20%">Mar 30, 2024</th>
-            <td>
-              
-                <a class="news-title" href="/news/2024-pads-acceptance/">Regular Article accepted at PADS 2024</a>
-              
-            </td>
-          </tr>
-        
       </table>
     </div>
   
@@ -464,24 +413,6 @@
             <td>
               
                 <a class="news-title" href="/blog/2025/java-abstract-factory-pattern/">Abstract Factory design pattern</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row" style="width: 20%">Feb 04, 2025</th>
-            <td>
-              
-                <a class="news-title" href="/blog/2025/java-factory-method-pattern/">Factory method design pattern</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row" style="width: 20%">Feb 04, 2025</th>
-            <td>
-              
-                <a class="news-title" href="/blog/2025/java-mediator-pattern/">Mediator design pattern</a>
               
             </td>
           </tr>
@@ -1023,6 +954,13 @@
               handler: () => {
                 window.location.href = "/news/";
               },
+            },{id: "nav-blog",
+              title: "blog",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
             },{id: "nav-cv",
               title: "cv",
               description: "Get the concise PDF version by clicking on the PDF button on the right.",
@@ -1044,35 +982,7 @@
               handler: () => {
                 window.location.href = "/repositories/";
               },
-            },{id: "nav-blog",
-              title: "blog",
-              description: "",
-              section: "Navigation",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "dropdown-publications",
-                  title: "publications",
-                  description: "",
-                  section: "Dropdown",
-                  handler: () => {
-                    window.location.href = "";
-                  },
-                },{id: "dropdown-projects",
-                  title: "projects",
-                  description: "",
-                  section: "Dropdown",
-                  handler: () => {
-                    window.location.href = "";
-                  },
-                },{id: "dropdown-blog",
-                  title: "blog",
-                  description: "",
-                  section: "Dropdown",
-                  handler: () => {
-                    window.location.href = "/blog/";
-                  },
-                },{id: "post-builder-design-pattern",
+            },{id: "post-builder-design-pattern",
           
             title: "Builder design pattern",
           

@@ -179,6 +179,24 @@
                 
                 <li class="nav-item ">
                   
+                  <a class="nav-link" href="/blog/">blog
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  
                   <a class="nav-link" href="/cv/">cv
                     
                   </a>
@@ -210,57 +228,6 @@
               
             
           
-            
-              
-                
-                <li class="nav-item ">
-                  
-                  <a class="nav-link" href="/blog/">blog
-                    
-                  </a>
-                </li>
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-                
-                <li class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus
-                    
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    
-                      
-                        <a class="dropdown-item " href="/publications/">publications</a>
-                      
-                    
-                      
-                        <div class="dropdown-divider"></div>
-                      
-                    
-                      
-                        <a class="dropdown-item " href="/projects/">projects</a>
-                      
-                    
-                      
-                        <div class="dropdown-divider"></div>
-                      
-                    
-                      
-                        <a class="dropdown-item " href="/blog/">blog</a>
-                      
-                    
-                  </div>
-                </li>
-              
             
           
           
@@ -584,6 +551,13 @@ Article is available</p>
               handler: () => {
                 window.location.href = "/news/";
               },
+            },{id: "nav-blog",
+              title: "blog",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
             },{id: "nav-cv",
               title: "cv",
               description: "Get the concise PDF version by clicking on the PDF button on the right.",
@@ -605,35 +579,7 @@ Article is available</p>
               handler: () => {
                 window.location.href = "/repositories/";
               },
-            },{id: "nav-blog",
-              title: "blog",
-              description: "",
-              section: "Navigation",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "dropdown-publications",
-                  title: "publications",
-                  description: "",
-                  section: "Dropdown",
-                  handler: () => {
-                    window.location.href = "";
-                  },
-                },{id: "dropdown-projects",
-                  title: "projects",
-                  description: "",
-                  section: "Dropdown",
-                  handler: () => {
-                    window.location.href = "";
-                  },
-                },{id: "dropdown-blog",
-                  title: "blog",
-                  description: "",
-                  section: "Dropdown",
-                  handler: () => {
-                    window.location.href = "/blog/";
-                  },
-                },{id: "post-builder-design-pattern",
+            },{id: "post-builder-design-pattern",
           
             title: "Builder design pattern",
           
