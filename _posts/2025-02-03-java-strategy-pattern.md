@@ -58,7 +58,6 @@ class Service {
     private boolean isDataSorted;
     ...
     void searchForKey([T] data, T key) {
-        this.servicePolicy(
         this.searchStrategy.searchKey(data, key);
     }
 }
@@ -90,3 +89,14 @@ class ServicePolicy {
 Each time a new `Service` is created, a corresponding `ServicePolicy` can be created. 
 Depending on the state of the `Service`, an appropriate `SearchStrategy` instance is set to the `Service`.
 The `Service` can then just call the `searchKey()` method and it will call the appropriate concrete implementation.
+
+```java
+main() {
+
+    ...
+    Service service = new Service();
+    ServicePolicy policy = new ServicePolicy(service);
+    policy.configure();
+    ...
+}
+```
