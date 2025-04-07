@@ -218,16 +218,6 @@
             
           
             
-              
-                
-                <li class="nav-item ">
-                  
-                  <a class="nav-link" href="/repositories/">repositories
-                    
-                  </a>
-                </li>
-              
-            
           
             
           
@@ -329,11 +319,11 @@
     
     <div id="markdown-content">
       <p>Strategy pattern helps selecting from multiple implementations based on a certain policy.
-A simple example is the contextual based search selected that selects from the multiple available search algorithms.
+A simple example is the contextual based search that selects from the multiple available search algorithms.
 If the data is sorted, then binary search can be used.
 Otherwise, a linear search is unavoidable.</p>
 
-<p>Consider a simple tool that needs the search feature, which is represented by an interface:</p>
+<p>We can represent the search strategy by an interface:</p>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">SearchStrategy</span> <span class="o">{</span>
     <span class="kt">int</span> <span class="nf">searchKey</span><span class="o">([</span><span class="no">T</span><span class="o">]</span> <span class="n">data</span><span class="o">,</span> <span class="no">T</span> <span class="n">key</span><span class="o">);</span>
@@ -441,6 +431,12 @@ The <code class="language-plaintext highlighter-rouge">Service</code> can then j
   
 
   <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/java-code-smells/">Code Smells in Object Oriented Approach</a>
+  </li>
+
+  
+
+  <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/java-vendor-lockin-antipattern/">Vendor lock-in Antipattern</a>
   </li>
 
@@ -448,12 +444,6 @@ The <code class="language-plaintext highlighter-rouge">Service</code> can then j
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/java-cut-and-paste-antipattern/">Cut and Paste Programming Antipattern</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/java-spaghetti-antipattern/">Spaghetti Antipattern</a>
   </li>
 
 
@@ -481,7 +471,7 @@ The <code class="language-plaintext highlighter-rouge">Service</code> can then j
 
       
       
-        Last updated: February 06, 2025.
+        Last updated: April 07, 2025.
       
     </div>
   </footer>

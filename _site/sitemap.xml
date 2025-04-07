@@ -29,6 +29,14 @@
 <lastmod>2024-12-20T08:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>http://0.0.0.0:8080/news/2025-wcnc-presentation/</loc>
+<lastmod>2025-03-27T10:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/news/2025-vnc-acceptance/</loc>
+<lastmod>2025-04-02T18:05:00+00:00</lastmod>
+</url>
+<url>
 <loc>http://0.0.0.0:8080/blog/2024/overleaf-git/</loc>
 <lastmod>2024-09-28T09:00:00+00:00</lastmod>
 </url>
@@ -125,10 +133,6 @@
 <lastmod>2025-02-06T11:35:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://0.0.0.0:8080/blog/2025/java-code-smells/</loc>
-<lastmod>2025-02-06T11:35:00+00:00</lastmod>
-</url>
-<url>
 <loc>http://0.0.0.0:8080/blog/2025/java-spaghetti-antipattern/</loc>
 <lastmod>2025-02-06T12:25:00+00:00</lastmod>
 </url>
@@ -139,6 +143,10 @@
 <url>
 <loc>http://0.0.0.0:8080/blog/2025/java-vendor-lockin-antipattern/</loc>
 <lastmod>2025-02-06T14:25:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/blog/2025/java-code-smells/</loc>
+<lastmod>2025-02-06T16:35:00+00:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:8080/</loc>

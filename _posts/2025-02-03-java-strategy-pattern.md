@@ -8,11 +8,11 @@ categories: code
 --- 
 
 Strategy pattern helps selecting from multiple implementations based on a certain policy.
-A simple example is the contextual based search selected that selects from the multiple available search algorithms.
+A simple example is the contextual based search that selects from the multiple available search algorithms.
 If the data is sorted, then binary search can be used.
 Otherwise, a linear search is unavoidable.
 
-Consider a simple tool that needs the search feature, which is represented by an interface:
+We can represent the search strategy by an interface:
 
 ```java
 interface SearchStrategy {

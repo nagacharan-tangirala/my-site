@@ -218,16 +218,6 @@
             
           
             
-              
-                
-                <li class="nav-item ">
-                  
-                  <a class="nav-link" href="/repositories/">repositories
-                    
-                  </a>
-                </li>
-              
-            
           
             
           
@@ -336,13 +326,13 @@ For example, there are various types of <code class="language-plaintext highligh
 </code></pre></div></div>
 
 <p>Both the function calls will succeed without any errors.
-The appropriate function call is invoked.
+The appropriate function is invoked.
 This process is called <em>Overloading</em>, where a single feature name denotes two or more operations.
 In this case, <code class="language-plaintext highlighter-rouge">max</code> operates for various types with the same name.</p>
 
-<p>Of course, the following call will not work.</p>
+<p>Of course, the following call will not work because the <code class="language-plaintext highlighter-rouge">Math</code> library does not support comparison between mismatched types.</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">maxMixed</span> <span class="o">=</span> <span class="nc">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">y</span><span class="o">);</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">maxMixed</span> <span class="o">=</span> <span class="nc">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">y</span><span class="o">);</span> <span class="c1">// because `a` is int, `y` is long</span>
 </code></pre></div></div>
 
 <p>The binding for the appropriate function happens at compile time.
@@ -382,9 +372,14 @@ This is determined dynamically during the runtime of the program.</p>
 
 <h4 id="summary">Summary</h4>
 
-<p>Overloading: Same function names with <em>different</em> parameter types, function matching at <em>compile</em> time.</p>
-
-<p>Overriding: Same function names with <em>same</em> parameter types, function matching at <em>runtime</em>.</p>
+<ul>
+  <li>
+    <p><strong>Overloading</strong>: Same function names with <em>different</em> parameter types, function matching at <em>compile</em> time.</p>
+  </li>
+  <li>
+    <p><strong>Overriding</strong>: Same function names with <em>same</em> parameter types, function matching at <em>runtime</em>.</p>
+  </li>
+</ul>
 
     </div>
   </article>
@@ -410,6 +405,12 @@ This is determined dynamically during the runtime of the program.</p>
   
 
   <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/java-code-smells/">Code Smells in Object Oriented Approach</a>
+  </li>
+
+  
+
+  <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/java-vendor-lockin-antipattern/">Vendor lock-in Antipattern</a>
   </li>
 
@@ -417,12 +418,6 @@ This is determined dynamically during the runtime of the program.</p>
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/java-cut-and-paste-antipattern/">Cut and Paste Programming Antipattern</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/java-spaghetti-antipattern/">Spaghetti Antipattern</a>
   </li>
 
 
@@ -450,7 +445,7 @@ This is determined dynamically during the runtime of the program.</p>
 
       
       
-        Last updated: February 06, 2025.
+        Last updated: April 07, 2025.
       
     </div>
   </footer>

@@ -54,6 +54,7 @@ class BigCar extends Car {
     private double x;
     private double y;
     private double SPEED = 130.0;
+    private carFeatures carFeatures;
     ...
 
     public BigCar(String style, Color color, CarFactory carFactory) {

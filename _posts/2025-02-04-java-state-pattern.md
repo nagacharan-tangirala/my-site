@@ -76,7 +76,7 @@ class File {
         this.fileState.delete(this);
     }
 
-    // A helper message to update the fileState object.
+    // A helper method to update the fileState object.
     void updateState(FileState newState) {
         this.fileState = newState;
     }

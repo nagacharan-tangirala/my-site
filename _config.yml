@@ -303,7 +303,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["java-snippets", "course", "patterns", "anti-patterns", "architecture", "structural", "creational"] # these tags will be displayed on the front page of your blog
-display_categories: ["code", "how-to"] # these categories will be displayed on the front page of your blog
+display_categories: ["code", "howto"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

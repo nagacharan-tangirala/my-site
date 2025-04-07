@@ -17,9 +17,14 @@ social: true # includes social icons at the bottom of the page
 
 ### About
 
-I am a PhD student enrolled at Technical University of Munich. I am simulating various applications in urban mobility since 2017. In my PhD, I am diving deep into the impact of 5G and Beyond on Urban Mobility. When I say deep I mean it, because I am developing a [new simulator called Disolv](https://disolv.dev) to support my studies. You can read all about it in [this article](https://doi.org/10.1145/3615979.3656062).
+I am searching for a developer role in C++ or Rust.
+I am an urban mobility researcher with expertise in developing simulation tools for urban mobility research. 
+Specifically, I like working in the connected vehicles studies at city scale.
+I have extensively used C++ and Rust in my work so far.
+As a part of my doctoral thesis work, I have developed a [new simulator called Disolv](https://disolv.dev).
+More details are found in my research articles.
 
-I will be sharing my research journey on this site, mostly professional highlights. My scholar profile, github and socials are at the bottom of the page.
+My scholar profile, github and socials are at the bottom of the page.
 
 #### Past Work
 

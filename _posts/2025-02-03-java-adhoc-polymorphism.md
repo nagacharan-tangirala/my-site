@@ -31,14 +31,14 @@ int maxLong = Math.max(x, y);
 ```
 
 Both the function calls will succeed without any errors.
-The appropriate function call is invoked.
+The appropriate function is invoked.
 This process is called *Overloading*, where a single feature name denotes two or more operations.
 In this case, `max` operates for various types with the same name.
 
-Of course, the following call will not work.
+Of course, the following call will not work because the `Math` library does not support comparison between mismatched types.
 
 ```java
-int maxMixed = Math.max(a, y);
+int maxMixed = Math.max(a, y); // because `a` is int, `y` is long
 ```
 
 The binding for the appropriate function happens at compile time.
@@ -81,6 +81,6 @@ This is because of the overriding, also a feature of polymorphism.
 
 #### Summary
 
-Overloading: Same function names with *different* parameter types, function matching at *compile* time.
+- **Overloading**: Same function names with *different* parameter types, function matching at *compile* time.
 
-Overriding: Same function names with *same* parameter types, function matching at *runtime*.
+- **Overriding**: Same function names with *same* parameter types, function matching at *runtime*.

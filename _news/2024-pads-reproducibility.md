@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reproducibility report for the article accepted to PADS 2024
+title: Reproducibility report for the PADS 2024 article
 date: 2024-05-30 10:00:00
 inline: false
 related_posts: false
